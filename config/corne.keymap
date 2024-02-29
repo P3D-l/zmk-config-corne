@@ -9,7 +9,71 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        accentE {
+            bindings = <&macroE>;
+            key-positions = <11 3>;
+        };
+
+        accentA {
+            bindings = <&macroA>;
+            key-positions = <11 13>;
+        };
+
+        accentI {
+            bindings = <&macroI>;
+            key-positions = <8 11>;
+        };
+
+        accentO {
+            bindings = <&macroO>;
+            key-positions = <11 9>;
+        };
+
+        accentU {
+            bindings = <&macroU>;
+            key-positions = <11 8>;
+        };
+    };
+
+    macros {
+        macroE: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp E>;
+            label = "NEW_MACRO";
+        };
+
+        macroA: macroA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp A>;
+            label = "MACROA";
+        };
+
+        macroI: macroI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp I>;
+            label = "MACROI";
+        };
+
+        macroU: macroU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp U>;
+            label = "MACROU";
+        };
+
+        macroO: macroO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp O>;
+            label = "MACROO";
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -22,10 +86,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R   &kp T        &kp Y      &kp U  &kp I     &kp O    &kp P          &kp BSPC
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F   &kp G        &kp H      &kp J  &kp K     &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V   &kp B        &kp B      &kp N  &kp M     &kp DOT  &kp FSLH       &kp ESC
-                                &kp LGUI  &tog 1  &kp ENTER    &kp SPACE  &mo 2  &kp RALT
+&kp TAB           &kp Q  &kp W  &kp E     &kp R   &kp T        &kp Y  &kp U      &kp I         &kp O    &kp P          &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F   &kp G        &kp H  &kp J      &kp K         &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V   &kp B        &kp B  &kp N      &kp M         &kp DOT  &kp FSLH       &kp ESC
+                                &kp LGUI  &tog 1  &kp ENTER    &mo 2  &kp SPACE  &kp LEFT_ALT
             >;
         };
 
