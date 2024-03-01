@@ -106,7 +106,10 @@
         greeting: greeting {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(B) &kp O &kp M &kp SPACE &kp D &kp I &kp A &kp SPACE &kp M &kp E &kp SPACE &kp C &kp H &kp A &kp M &kp O &kp SPACE &kp LS(P) &kp E &kp D &kp R &kp O &kp COMMA &kp SPACE &kp C &kp O &kp M &kp O &kp SPACE &kp P &kp O &kp S &kp S &kp O &kp SPACE &kp A &kp J &kp U &kp D &kp A &kp R &kp SPACE &kp QMARK>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(B) &kp O &kp M &kp SPACE &kp D &kp I &kp A &kp SPACE &kp M &kp E &kp SPACE &kp C &kp H &kp A &kp M &kp O &kp SPACE &kp LS(P) &kp E &kp D &kp R &kp O &kp COMMA &kp SPACE &kp C &kp O &kp M &kp O &kp SPACE &kp P &kp O &kp S &kp S &kp O &kp SPACE &kp A &kp J &kp U &kp D &kp A &kp R &kp SPACE &kp QMARK>;
+
             label = "GREETING";
         };
     };
