@@ -36,6 +36,16 @@
             bindings = <&macroU>;
             key-positions = <11 8>;
         };
+
+        questionmarc {
+            bindings = <&kp QUESTION>;
+            key-positions = <41 2>;
+        };
+
+        slash {
+            bindings = <&kp KP_DIVIDE>;
+            key-positions = <41 1>;
+        };
     };
 
     macros {
