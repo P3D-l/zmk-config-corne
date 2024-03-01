@@ -38,7 +38,7 @@
         };
 
         questionmarc {
-            bindings = <&kp QUESTION>;
+            bindings = <&question>;
             key-positions = <41 2>;
         };
 
@@ -82,6 +82,19 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp O>;
             label = "MACROO";
+        };
+
+        question: question {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>;
+
+            label = "QUESTION";
         };
     };
 
