@@ -89,7 +89,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press &kp RIGHT_ALT>,
-                <&macro_tap &kp Q>,
+                <&macro_tap &kp W>,
                 <&macro_release &kp RIGHT_ALT>;
 
             label = "QUESTION";
