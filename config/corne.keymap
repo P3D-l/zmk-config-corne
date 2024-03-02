@@ -88,8 +88,7 @@
         macroU: macroU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp U>;
-
+            bindings = <&kp LEFT_BRACKET &kp U>;
             label = "MACROU";
         };
 
