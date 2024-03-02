@@ -56,6 +56,11 @@
             bindings = <&greetingEvening>;
             key-positions = <29 31>;
         };
+
+        layerThree {
+            bindings = <&tog 3>;
+            key-positions = <39 37>;
+        };
     };
 
     macros {
@@ -182,12 +187,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        numpad {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
