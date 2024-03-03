@@ -126,13 +126,6 @@
             bindings = <&kp LS(B) &kp O &kp A &kp SPACE &kp T &kp A &kp R &kp D &kp E &kp SPACE &kp M &kp E &kp SPACE &kp C &kp H &kp A &kp M &kp O &kp SPACE &kp LS(P) &kp E &kp D &kp R &kp O>;
             label = "GREETINGEVENING";
         };
-
-        rbr_macro: rbr_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp DOWN &kp DOWN &kp DOWN &kp ENTER &kp UP_ARROW &kp ENTER>;
-            label = "RBR_MACRO";
-        };
     };
 
     keymap {
