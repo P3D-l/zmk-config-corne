@@ -34,7 +34,7 @@
 
         accentU {
             bindings = <&macroU>;
-            key-positions = <11 8>;
+            key-positions = <11 7>;
         };
 
         questionmarc {
