@@ -128,6 +128,15 @@
         };
     };
 
+    behaviors {
+        cedilha: cedilha {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CEDILHA";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp SEMICOLON>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -139,10 +148,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB                  &kp Q  &kp W  &kp E     &kp R   &kp T              &kp Y  &kp U      &kp I         &kp O      &kp P       &kp BSPC
-&mt LEFT_SHIFT CAPSLOCK  &kp A  &kp S  &kp D     &kp F   &kp G              &kp H  &kp J      &kp K         &kp L      &kp SQT     &caps_word
-&kp LEFT_CONTROL         &kp Z  &kp X  &kp C     &kp V   &kp B              &kp B  &kp N      &kp M         &kp COMMA  &kp PERIOD  &kp ESC
-                                       &kp LGUI  &tog 1  &mt SPACE ENTER    &mo 2  &kp SPACE  &kp LEFT_ALT
+&kp TAB                  &mt LS(Q) Q  &mt LS(W) W  &mt LS(E) E  &mt LS(R) R  &mt LS(T) T        &mt LS(Y) Y  &mt LS(U) U  &mt LS(I) I   &mt LS(O) O  &mt LS(P) P  &kp BSPC
+&mt LEFT_SHIFT CAPSLOCK  &mt LS(A) A  &mt LS(S) S  &mt LS(D) D  &mt LS(F) F  &mt LS(G) G        &mt LS(H) H  &mt LS(J) J  &mt LS(K) K   &mt LS(L) L  &kp SQT      &caps_word
+&kp LEFT_CONTROL         &mt LS(Z) Z  &mt LS(X) X  &cedilha     &mt LS(V) V  &mt LS(B) B        &mt LS(B) B  &mt LS(N) N  &mt LS(M) M   &kp COMMA    &kp PERIOD   &kp ESC
+                                                   &kp LGUI     &tog 1       &mt SPACE ENTER    &mo 2        &kp SPACE    &kp LEFT_ALT
             >;
         };
 
