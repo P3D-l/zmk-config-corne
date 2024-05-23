@@ -154,7 +154,7 @@
             bindings = <&sl 3>, <&mo 2>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
+            mods = <(MOD_LCTL)>;
         };
     };
 
