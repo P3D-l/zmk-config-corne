@@ -174,10 +174,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &mt LS(Q) Q  &mt LS(W) W  &mt LS(E) E  &mt LS(R) R  &none      &none        &mt LS(U) U  &mt LS(I) I   &mt LS(O) O  &mt LS(P) P  &kp BSPC
-&kp LEFT_SHIFT    &mt LS(A) A  &mt LS(S) S  &mt LS(D) D  &mt LS(F) F  &none      &none        &mt LS(J) J  &mt LS(K) K   &mt LS(L) L  &kp SQT      &kp CAPSLOCK
-&kp LEFT_CONTROL  &mt LS(Z) Z  &mt LS(X) X  &cedilha     &mt LS(V) V  &none      &none        &mt LS(N) N  &mt LS(M) M   &kp COMMA    &kp PERIOD   &kp ESC
-                                            &kp LGUI     &tog 1       &kp RET    &latmovred2  &kp SPACE    &kp LEFT_ALT
+&kp TAB           &mt LS(Q) Q  &mt LS(W) W  &mt LS(E) E  &mt LS(R) R  &mt LS(T) T    &none        &mt LS(U) U  &mt LS(I) I   &mt LS(O) O  &mt LS(P) P  &kp BSPC
+&kp LEFT_SHIFT    &mt LS(A) A  &mt LS(S) S  &mt LS(D) D  &mt LS(F) F  &mt LS(G) G    &none        &mt LS(J) J  &mt LS(K) K   &mt LS(L) L  &kp SQT      &kp CAPSLOCK
+&kp LEFT_CONTROL  &mt LS(Z) Z  &mt LS(X) X  &cedilha     &mt LS(V) V  &mt LS(B) B    &none        &mt LS(N) N  &mt LS(M) M   &kp COMMA    &kp PERIOD   &kp ESC
+                                            &kp LGUI     &tog 1       &kp RET        &latmovred2  &kp SPACE    &kp LEFT_ALT
             >;
         };
 
@@ -222,10 +222,10 @@
 
         smash {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I   &kp O      &kp P    &kp BSPC
-&kp LSHFT  &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K   &kp L      &kp SQT  &kp CAPS
-&kp LCTRL  &kp Z  &kp X  &kp C   &kp V   &kp B     &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp N0
-                         &kp N2  &kp N3  &kp N4    &kp N5  &kp N6  &kp N7
+&kp TAB    &kp Q  &kp W  &kp E               &kp R  &kp T     &kp Y   &kp U   &kp I   &kp O      &kp P    &kp BSPC
+&kp LSHFT  &kp A  &kp S  &kp D               &kp F  &kp G     &kp H   &kp J   &kp K   &kp L      &kp SQT  &kp CAPS
+&kp LCTRL  &kp Z  &kp X  &kp C               &kp V  &kp B     &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp N0
+                         &mt NUMBER_1 SPACE  &kp Z  &kp N4    &kp N5  &kp N6  &kp N7
             >;
         };
     };
