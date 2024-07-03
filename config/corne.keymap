@@ -63,12 +63,12 @@
         };
 
         layerThree {
-            bindings = <&tog 3>;
+            bindings = <&tog 0>;
             key-positions = <39 37>;
         };
 
         toggle_layer4 {
-            bindings = <&tog 4>;
+            bindings = <&tog 0>;
             key-positions = <35 23>;
         };
     };
@@ -150,13 +150,13 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LATMOV";
             #binding-cells = <0>;
-            bindings = <&sl 3>, <&tog 1>;
+            bindings = <&sl 0>, <&tog 1>;
         };
 
         latmovred2: latmovred2 {
             compatible = "zmk,behavior-mod-morph";
             label = "LATMOVRED2";
-            bindings = <&sl 3>, <&mo 2>;
+            bindings = <&sl 0>, <&mo 2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -174,10 +174,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &mt LS(Q) Q  &mt LS(W) W  &mt LS(E) E  &mt LS(R) R  &mt LS(T) T    &mt LS(Y) Y  &mt LS(U) U  &mt LS(I) I   &mt LS(O) O  &mt LS(P) P  &kp BSPC
-&kp LEFT_SHIFT    &mt LS(A) A  &mt LS(S) S  &mt LS(D) D  &mt LS(F) F  &mt LS(G) G    &mt LS(H) H  &mt LS(J) J  &mt LS(K) K   &mt LS(L) L  &kp SQT      &kp CAPSLOCK
-&kp LEFT_CONTROL  &mt LS(Z) Z  &mt LS(X) X  &cedilha     &mt LS(V) V  &mt LS(B) B    &mt LS(N) N  &mt LS(N) N  &mt LS(M) M   &kp COMMA    &kp PERIOD   &kp ESC
-                                            &kp LGUI     &tog 1       &kp RET        &mo 2        &kp SPACE    &kp LEFT_ALT
+&kp TAB           &kp Q  &kp W  &kp F     &kp P   &kp G      &kp J  &kp L      &kp U         &kp Y    &kp APOS   &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp R  &kp S     &kp T   &kp D      &kp H  &kp N      &kp E         &kp I    &kp O      &kp CAPSLOCK
+&kp LEFT_CONTROL  &kp Z  &kp X  &cedilha  &kp V   &kp B      &kp B  &kp K      &kp M         &kp DOT  &kp COMMA  &kp ESC
+                                &kp LGUI  &tog 1  &kp RET    &mo 2  &kp SPACE  &kp LEFT_ALT
             >;
         };
 
