@@ -19,7 +19,7 @@
 
         accentE {
             bindings = <&macroE>;
-            key-positions = <3 10>;
+            key-positions = <10 20>;
         };
 
         accentA {
@@ -29,17 +29,17 @@
 
         accentI {
             bindings = <&macroI>;
-            key-positions = <8 10>;
+            key-positions = <10 21>;
         };
 
         accentO {
             bindings = <&macroO>;
-            key-positions = <9 10>;
+            key-positions = <10 22>;
         };
 
         accentU {
             bindings = <&macroU>;
-            key-positions = <7 10>;
+            key-positions = <10 8>;
         };
 
         questionmarc {
